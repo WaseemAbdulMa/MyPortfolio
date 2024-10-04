@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mohammed Abdul Waseem's Portfolio</title>
+    <style>
+        body {
+            scroll-behavior: smooth; /* Smooth scrolling */
+            padding-top: 56px; /* Space for fixed navbar */
+            font-family: "Poppins", sans-serif;
+            
+        }
+        .section {
+            padding: 60px 0;
+            height: auto; /* Adjust height for content */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #about {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+        #projects {
+            background-color: #e9ecef; /* Slightly darker gray */
+        }
+        #skills {
+            background-color: #dee2e6; /* Even darker gray */
+        }
+        #contact {
+            background-color: #f8f9fa; /* Light gray for contact section */
+        }
+        h2 {
+            margin-bottom: 30px;
+            color: #343a40; /* Dark color for headings */
+        }
+        p {
+            color: #495057; /* Darker color for text */
+        }
+        .skill {
+            margin: 10px 0;
+        }
+        .title-log{
+            font-weight: 800;
+            font-size: 22px;
+        }
+        .menus{
+            font-weight: 800; 
+            font-size: 16px; 
+        }
+        .navbar{
+            background-color: #000;
+            border-bottom: 1px solid #ff6f4a;;
+        }
+        .download-cv-btn{
+             color: #fff; border: 1px solid #fff; padding: 10px 10px; border-radius: 5px; cursor: pointer;
+        }
+        .download-cv-btn:hover{
+            border: 1px solid #ff6f4a;
+            color: #ff6f4a;
+        }
+        .nav-link{
+            margin:3px !important;
+            margin-right: 6px !important;
+            color:#fff !important;
+        }
+        .nav-link:hover{
+            color:#ff6f4a !important;
+        }
+        .abt-classheader{
+            font-family: "Poppins", sans-serif;
+            font-weight: 800 !important;
+        }
+        .lead{
+             color: rgba(255, 255, 255, .55) !important;
+             font-family: "Poppins", sans-serif !important;
+             font-weight: 200;
+        }
+       .active{
+        color:#ff6f4a !important;
+       }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .btn-light:hover {
+        background-color: #ff6f4a;
+        color: #ff6f4a;
+    }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .btn-light:hover {
+            background-color: #ff6f4a;
+            color: #fff;
+        }
+        .skill-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+  
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+            <a class="navbar-brand title-log" href="#about">Abdul Waseem</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menus">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="btn download-cv-btn" target="_blank"  href='https://drive.google.com/file/d/1WlhG3LBNQe0O4ZfzkEcIKmcv3wXleY9C/view?usp=sharing'>
+                        Download Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- About Section -->
+<section id="about" class="section" style="background: #000; padding: 60px 0; min-height: 100vh; display: flex; align-items: center; position: relative;">
+    <div class="container d-flex flex-column flex-md-row align-items-center text-center text-md-left">
+        <!-- Image -->
+        <div class="col-md-6 order-md-1 mb-4 mb-md-0">
+            <img src="images/img2.jpg" alt="About Me" class="img-fluid rounded-circle shadow" style="width: 300px; height: 300px; object-fit: cover; border: 4px solid #fff;"><br>
+            <br>
+            <a href="https://www.linkedin.com/in/waseemabdul/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="color:#ff6f4a; font-size:40px;"></i></a>&nbsp;&nbsp;
+            <a href="mailto:abdulwaseem9777@gmail.com" ><i class="fa fa-envelope" aria-hidden="true" style="color:#ff6f4a; font-size:40px;"></i></a>&nbsp;&nbsp;
+            <a href="tel:7780730011">
+            <i class="fa fa-mobile" aria-hidden="true" style="color:#ff6f4a; font-size:42px;"></i></a>
+        </div>
+        <!-- About Content -->
+        <div class="col-md-6 order-md-2">
+            <h2 class="mb-4 abt-classheader" style="font-size: 2.8rem;   font-weight: bold; color: #fff; letter-spacing: 1px;"><span style="color:#ff6f4a; ">About </span> Me</h2>
+            <p class="lead mb-4" style="font-size: 1.4rem; color: #fff; line-height: 1.8; letter-spacing: 0.5px;">
+                Hi, I'm <strong><span style="color:#fff;">Mohammed Abdul Waseem</span></strong>, a passionate <strong>Python Developer</strong> with expertise in <strong>Python</strong>, <strong>Django Framework</strong>, and <strong>SQL</strong>. 
+                I enjoy creating dynamic, user-friendly applications and having powerful digital solutions knowledge.
+            </p>
+            <p class="lead mb-4" style="color: #ececec; font-size: 1.2rem; line-height: 1.7;">
+                With a focus on clean code and strong design principles, I love translating ideas into reality using the latest technologies. 
+                I’m always eager to learn new things and stay updated with the latest trends in web development.
+            </p>
+            
+            <!-- Call to Action Buttons -->
+            <div class="buttons">
+                <a href="#projects" class="btn btn-outline-light" style="margin-right: 10px; padding: 12px 25px; color:#ff6f4a; font-size: 1.1rem; border: 1px solid #ff6f4a; border-radius: 30px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#ff6f4a';">View Projects</a>
+                <a href="#contact" class="btn btn-light" style="padding: 12px 25px;  color:#ff6f4a; font-size: 1.1rem; border-radius: 30px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#ff6f4a'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#fff'; this.style.color='#ff6f4a';">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+
+
+
+<!-- Projects Section -->
+<section id="projects" class="section" style="background:#1e1e1e; padding: 60px 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative;">
+    <div class="container text-center">
+        
+        <h2 class="mb-5" style="font-size: 2.8rem; font-weight: 800; color: #fff;"><span style="color:#ff6f4a">Hands-On </span>Projects </h2>
+        <p style="margin-top:-26px; padding-bottom:28px; color:rgba(255, 255, 255, .55);">Projects that highlight my ability to transform ideas into functional applications.</p>
+        <div class="row">
+            <!-- Project Card 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-lg h-100" style="background-color: rgba(255, 255, 255, 0.9); border: none; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="https://img.freepik.com/free-vector/hiring-agency-candidates-job-interview_1262-18940.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726790400&semt=ais_hybrid" alt="Office Employee Management" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body" style="padding:24px;">
+                        <h5 class="card-title" style="font-size: 1.7rem; font-weight: bold; color: #ff6f4a;">Office Employee Management</h5>
+                        <p class="card-text" style="color: #555;">
+                            Revolutionizing workplace dynamics, this web application empowers organizations to manage employee tasks and records seamlessly.
+                            The admin dashboard enables real-time monitoring, built with Django for reliability, security, and ease of use.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-lg h-100" style="background-color: rgba(255, 255, 255, 0.9); border: none; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="https://www.shutterstock.com/image-photo/doctor-works-management-mechanism-medical-260nw-1549990442.jpg" alt="Hospital Management System" class="card-img-top" style="height: 300px; object-fit: cover;">
+                    <div class="card-body" style="padding:24px;">
+                        <h5 class="card-title" style="font-size: 1.7rem; font-weight: bold; color: #ff6f4a;">Hospital Management System</h5>
+                        <p class="card-text" style="color: #555;">
+                            A complete solution for managing hospital operations, from appointment scheduling to patient records, ensuring seamless and efficient healthcare services.
+                            Built using Django, ensuring high performance and a user-friendly interface.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GitHub Button -->
+        <div class="mt-5">
+            <a href="https://github.com/WaseemAbdulMa?tab=repositories" class="btn btn-light" target="_blank" style="padding: 12px 30px; font-size: 1.2rem; border-radius: 30px; border:none; background-color: #ff6f4a; color: #fff; transition: background-color 0.3s, color 0.3s;">
+                Explore My GitHub
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    
+    <!-- Skills Section -->
+<section id="skills" class="section" style="background:#000; padding: 60px 0;">
+    <div class="container text-center">
+        <h2 class="mb-5" style="font-size: 2.8rem; font-weight: bold; color: #fff;"> <span style="color:#ff6f4a">Technical </span>Skills</h2>
+        <p style="margin-top:-26px; padding-bottom:28px; color:rgba(255, 255, 255, .55);">A blend of front-end, back-end, and database expertise. <br> My skills enable me to create full-stack solutions with efficiency and precision.   </p>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="skill-card shadow-lg p-4" style="background-color: rgba(255, 255, 255, 0.9); border-radius: 12px; transition: transform 0.3s; overflow: hidden;">
+                    <h5 style="font-size: 1.5rem; font-weight: bold; color: #333;">Python</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-card shadow-lg p-4" style="background-color: rgba(255, 255, 255, 0.9); border-radius: 12px; transition: transform 0.3s; overflow: hidden;">
+                    <h5 style="font-size: 1.5rem; font-weight: bold; color: #333;">Django</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-card shadow-lg p-4" style="background-color: rgba(255, 255, 255, 0.9); border-radius: 12px; transition: transform 0.3s; overflow: hidden;">
+                    <h5 style="font-size: 1.5rem; font-weight: bold; color: #333;">SQL</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-card shadow-lg p-4" style="background-color: rgba(255, 255, 255, 0.9); border-radius: 12px; transition: transform 0.3s; overflow: hidden;">
+                    <h5 style="font-size: 1.5rem; font-weight: bold; color: #333;">HTML & CSS</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-card shadow-lg p-4" style="background-color: rgba(255, 255, 255, 0.9); border-radius: 12px; transition: transform 0.3s; overflow: hidden;">
+                    <h5 style="font-size: 1.5rem; font-weight: bold; color: #333;">JavaScript</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="skill-card shadow-lg p-4" style="background-color: rgba(255, 255, 255, 0.9); border-radius: 12px; transition: transform 0.3s; overflow: hidden;">
+                    <h5 style="font-size: 1.5rem; font-weight: bold; color: #333;">Bootstarp</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="section" style="padding: 80px 0; background-color: #1e1e1e;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h2 style="font-size: 2.8rem; font-weight: bold; color: #fff; text-align: left;"> <span style="color:#ff6f4a">Contact</span> Me </h2>
+                <p style="color:rgba(255, 255, 255, .55);">Let’s connect and discuss potential opportunities! Your feedback and inquiries are always welcome.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-7 ">
+                <form action="https://formspree.io/f/mqakzzyq" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required 
+                            style="padding: 15px; font-size: 1rem; background-color: #333; color: #fff; border: none; border-radius: 8px;">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your Email" required 
+                            style="padding: 15px; font-size: 1rem; background-color: #333; color: #fff; border: none; border-radius: 8px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number" required 
+                            style="padding: 15px; font-size: 1rem; background-color: #333; color: #fff; border: none; border-radius: 8px;">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required 
+                            style="padding: 15px; font-size: 1rem; background-color: #333; color: #fff; border: none; border-radius: 8px;">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required 
+                        style="padding: 15px; font-size: 1rem; background-color: #333; color: #fff; border: none; border-radius: 8px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" 
+                    style="padding: 12px 30px; font-size: 1.2rem; border-radius: 30px; background-color: #ff6f4a; border: none;">Send Message</button>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="section" style="background-color: #333; padding: 40px 0; color: white;">
+    <div class="container text-center">
+        <p style="font-size: 1.2rem; color: #ccc;">&copy; 2024 Mohammed Abdul Waseem | All Rights Reserved.</p>
+        <p style="color: #ccc; margin-bottom: 0;">Email: abdulwaseem9777@gmail.com | Phone: +91 7780730011</p>
+    </div>
+</footer>
+
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
